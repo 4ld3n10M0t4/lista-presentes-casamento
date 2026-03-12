@@ -177,7 +177,7 @@ h3.categoria-titulo {
                             <p class="small text-muted mt-2">
                                 {% for p in item.colaboradores %}{{ p.nome_convidado }}{% if not loop.last %}, {% endif %}{% endfor %}
                             </p>
-                        </div>
+                       </div>
                     {% endif %}
                 </div>
             </div>
@@ -185,6 +185,7 @@ h3.categoria-titulo {
         {% endfor %}
     </div>
     {% endfor %}
+</div>
 
     <div class="container my-5">
     <div class="card shadow-lg border-0 text-center mx-auto" style="max-width: 700px; border-radius: 20px; background-color: #fcf9f2; border: 2px solid var(--olive-primary) !important;">
@@ -252,4 +253,5 @@ function copyPix() {
 </script>
 
 </body>
+
 </html>
