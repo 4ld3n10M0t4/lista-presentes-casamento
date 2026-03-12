@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presentes - Maraisa & Aldenio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --olive-primary: #556b2f;
+        --olive-light: #808b6d;
+        --bg-beige: #f7f3e9; /* Bege claro suave solicitado */
+    }
+    body { 
+        background-color: var(--bg-beige); 
+        font-family: 'Lato', sans-serif; 
+        color: #333; 
+    }
+    .hero { 
+        background-color: #ffffff;
+        padding: 60px 20px;
+        text-align: center;
+        border-bottom: 3px solid var(--olive-primary);
+        margin-bottom: 50px;
+    }
+        /* Cabeçalho de Casamento */
+        .hero { 
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), 
+                        url('https://www.transparenttextures.com/patterns/natural-paper.png');
+            padding: 80px 20px; 
+            text-align: center;
+            border-bottom: 2px solid var(--olive-light);
+            margin-bottom: 40px;
+        }
+        /* No seu bloco <style> */
+h3.categoria-titulo { 
+    font-family: 'Playfair Display', serif; /* Mantém a fonte elegante de casamento */
+    color: var(--olive-primary);           /* Usa o Verde Oliva definido no :root */
+    text-align: center;                    /* Centraliza o título da categoria */
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--olive-light); /* Adiciona uma linha sutil abaixo */
+    padding-bottom: 10px;
+}
+{% for categoria, itens in categorias.items() %}
+    <h3 class="categoria-titulo">{{ categoria }}</h3>
+    
+    <div class="row">
+        {% for item in itens %}
+            {% endfor %}
+    </div>
+{% endfor %}
+    /* Centraliza e padroniza os botões */
+    .btn-casamento, .btn-detalhes {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        border-radius: 20px;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px;
+        }
+    .btn-casamento { background-color: var(--olive-primary); color: white; border: none; }
+    .btn-detalhes { border: 1px solid var(--olive-primary); color: var(--olive-primary); background: white; 
+        }
+        .card { border: none; border-radius: 12px; transition: 0.3s; background: white; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(85,107,47,0.1); }
+        .card-img-top { height: 200px; object-fit: contain; padding: 15px; }
+
+        /* Botões e Inputs */
+        .btn-casamento { 
+            background-color: var(--olive-primary); 
+            color: white; 
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+        .btn-casamento:hover { background-color: var(--olive-light); color: white; }
+        .btn-detalhes { border-radius: 25px; color: var(--olive-primary); border-color: var(--olive-primary); }
+        
+        /* Progresso */
+        .progress { background-color: #e9ecef; border-radius: 10px; }
+        .progress-bar { background-color: var(--olive-light); }
+
+        /* Endereço de Entrega Harmonizado */
+        .endereco-section {
+            background-color: white;
+            border: 2px solid var(--olive-primary);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 60px auto;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .endereco-section h4 { 
+            font-family: 'Playfair Display', serif; 
+            color: var(--olive-primary); 
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .endereco-dados { font-size: 1.4rem; line-height: 1.8; color: #444; }
+        .badge-residencial { background-color: var(--olive-light); font-size: 1rem; padding: 8px 15px; }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>Maraisa & Aldenio</h1>
+    <p>"Assim, eles já não são dois, mas sim uma só carne. Portanto, o que Deus uniu, ninguém separe"
+        </p>
+
+       <p>Mateus 19:6</p>
+</div>
+
+<div class="container mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10 text-center">
+            <div class="p-4 shadow-sm" style="background-color: #ffffff; border-radius: 20px; border-left: 5px solid var(--olive-primary);">
+                <h4 style="font-family: 'Playfair Display', serif; color: var(--olive-primary); font-weight: bold;">Como funcionam os presentes?</h4>
+                <div class="mt-3 text-start px-md-4" style="font-size: 1.1rem; color: #555; line-height: 1.6;">
+                    
+                    <p><strong>🎁 Itens de Cota Única (1 de 1):</strong> Ao presentear esses itens, você será direcionado para o site da loja. O produto deve ser enviado diretamente para o <strong>endereço residencial</strong> indicado no final desta página.</p>
+                    
+                    <p><strong>🤝 Itens em Cotas (Rateio):</strong> Itens de maior valor foram divididos em cotas. Ao escolher uma cota, você contribui com o valor fracionado via <strong>PIX</strong>. Nós juntaremos todas as participações para adquirir o presente real para nossa casa!</p>
+                    
+                    <p class="mb-0 text-center mt-3"><em>Basta digitar seu nome, clicar em confirmar e seguir as instruções. 
+                        
+                        <br><br>
+                        Muito obrigado por fazer parte do nosso sonho!</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }} text-center rounded-pill">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    {% for categoria, itens in categorias.items() %}
+    <h3 class="categoria-titulo border-bottom pb-3">{{ categoria }}</h3>
+    <div class="row">
+        {% for item in itens %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm {% if item.presenteado %}opacity-50 grayscale{% endif %}">
+                <img src="{{ item.imagem_url }}" class="card-img-top" alt="{{ item.nome }}">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="card-title fw-bold mb-3">{{ item.nome }}</h5>
+                    
+                    <div class="mb-3 px-3">
+                        <div class="progress" style="height: 12px;">
+                            {% set perc = ((item.cotas_totais - item.cotas_restantes) / item.cotas_totais * 100) %}
+                            <div class="progress-bar" style="width: {{ perc }}%"></div>
+                        </div>
+                        <small class="text-muted mt-1 d-block">{{ item.cotas_restantes }} de {{ item.cotas_totais }} cotas livres</small>
+                    </div>
+
+                    {% if not item.presenteado %}
+                        <form action="/presentear/{{ item.id }}" method="POST" class="mt-auto">
+                            <input type="text" name="nome_convidado" class="form-control mb-2 text-center rounded-pill" placeholder="Digite seu nome" required>
+                            <div class="d-grid gap-2">
+                                <a href="{{ item.produto_url }}" target="_blank" class="btn btn-sm btn-detalhes">Ver Detalhes</a>
+                                <button type="submit" class="btn btn-casamento">Confirmar Presente</button>
+                            </div>
+                        </form>
+                    {% else %}
+                        <div class="mt-auto">
+                            <span class="badge bg-success w-100 p-2 rounded-pill">✔ Presenteado por:</span>
+                            <p class="small text-muted mt-2">
+                                {% for p in item.colaboradores %}{{ p.nome_convidado }}{% if not loop.last %}, {% endif %}{% endfor %}
+                            </p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+
+    <div class="container my-5">
+    <div class="card shadow-lg border-0 text-center mx-auto" style="max-width: 700px; border-radius: 20px; background-color: #fcf9f2; border: 2px solid var(--olive-primary) !important;">
+        <div class="card-body p-5">
+            <h2 style="font-family: 'Playfair Display', serif; color: var(--olive-primary);">Contribuição Livre (Lua de Mel)</h2>
+            <p class="text-muted mb-4">Se desejar nos presentear com qualquer valor, use nossa chave PIX:</p>
+            
+            <div class="input-group mb-3 mx-auto" style="max-width: 450px;">
+                <input type="text" id="pixKey" class="form-control text-center fw-bold" value="1549cdb0-3d17-4890-8c09-73dfc4ee4620" readonly style="border-radius: 15px 0 0 15px; border-color: var(--olive-light);">
+                <button class="btn" type="button" onclick="copyPix()" id="btnCopy" style="background-color: var(--olive-primary); color: white; border-radius: 0 15px 15px 0;">Copiar</button>
+            </div>
+            <div id="copyAlert" class="text-success fw-bold small" style="display: none;">✓ Chave copiada!</div>
+            <small class="text-uppercase fw-bold d-block mt-3" style="color: var(--olive-light); letter-spacing: 2px;">Banco PicPay | Maraisa & Aldenio</small>
+        </div>
+    </div>
+</div>
+
+<script>
+function copyPix() {
+    var copyText = document.getElementById("pixKey");
+    navigator.clipboard.writeText(copyText.value);
+    var btn = document.getElementById("btnCopy");
+    var alert = document.getElementById("copyAlert");
+    btn.innerHTML = "Copiado!";
+    alert.style.display = "block";
+    setTimeout(() => { btn.innerHTML = "Copiar"; alert.style.display = "none"; }, 3000);
+}
+</script>
+
+<div class="container mb-5 text-center">
+    <div class="card mx-auto shadow-sm border-0" style="max-width: 650px; border-radius: 15px;">
+        <div class="card-body p-4">
+            <h4 style="font-family: 'Playfair Display', serif; color: var(--olive-primary);">📍 Endereço para Entrega</h4>
+            <div style="font-size: 1.4rem; color: #444; line-height: 1.8;">
+                <p class="mb-1 fw-bold">Rua José Martins, 1176 Altos</p>
+                <p class="mb-1">Bom Jardim — Fortaleza, CE</p>
+                <p class="mb-0">CEP: 60543-462</p>
+                <span class="badge rounded-pill mt-3" style="background-color: var(--olive-light); padding: 10px 20px;">Residencial</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function copyPix() {
+    var copyText = document.getElementById("pixKey");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // Para dispositivos móveis
+    navigator.clipboard.writeText(copyText.value);
+
+    // Feedback visual
+    var btn = document.getElementById("btnCopy");
+    var alert = document.getElementById("copyAlert");
+    
+    btn.innerHTML = "Copiado!";
+    btn.style.backgroundColor = "#808b6d";
+    alert.style.display = "block";
+
+    setTimeout(function(){
+        btn.innerHTML = "Copiar";
+        btn.style.backgroundColor = "#556b2f";
+        alert.style.display = "none";
+    }, 3000);
+}
+</script>
+
+</body>
+</html>
